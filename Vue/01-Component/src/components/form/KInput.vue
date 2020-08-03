@@ -23,6 +23,7 @@
       onInput(e) {
         this.$emit('input', e.target.value)
 
+        // $parent会导致结构发生改变从将$parent有问题
         // 触发校验
         this.$parent.$emit('validate')
       }
