@@ -26,3 +26,4 @@
         不是用的时候移除并销毁
           document.body.removeChild(vm.$el)
           vm.$destroy()
+      实现树形结构
