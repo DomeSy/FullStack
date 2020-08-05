@@ -7,10 +7,13 @@
     <!-- <Solt></Solt> -->
 
     <!-- Element表单 -->
-    <!-- <ElementTest ></ElementTest> -->
+    <ElementTest ></ElementTest>
 
     <!-- 树形组件 -->
-    <Recursion></Recursion>
+    <!-- <Recursion></Recursion> -->
+
+    <!-- 混合对象 -->
+    <!-- <Mixins></Mixins> -->
   </div>
 </template>
 
@@ -19,6 +22,7 @@
   import Solt from  '@/components/solt';
   import ElementTest from '@/components/form';
   import Recursion from '@/components/recursion';
+  import Mixins from '@/components/mixins';
 
   export default {
     name: 'Index',
@@ -29,7 +33,8 @@
       Communication,
       Solt,
       ElementTest,
-      Recursion
+      Recursion,
+      Mixins
     }
   }
 </script>

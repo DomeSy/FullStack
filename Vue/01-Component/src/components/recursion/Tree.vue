@@ -15,6 +15,9 @@ export default {
   },
   components: {
     TreeNode
+  },
+  created(){
+    console.log(JSON.parse(JSON.stringify(this.data)))
   }
 };
 </script>
