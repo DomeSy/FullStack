@@ -1,37 +1,19 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
-import App from './App'
-import router from './router'
-// import './assets/css/common.css'
-import "lib-flexible"
-import Vconsole from "vconsole" //调试工具
-import "./assets/js/iView.js"
-import "./assets/js/vue.js"
-
-const FastClick = require('fastclick')
+import App from './App.vue'
+import './plugins/element.js'
+import router from './krouter'
+import store from './kstore'
+// import store from './store'
+// import router from './router'
 
 Vue.config.productionTip = false
+// 事件总线
 Vue.prototype.$bus = new Vue()
-// const vConsole = new Vconsole();
 
-FastClick.attach(document.body) //去掉点击延迟300毫秒
-
-router.beforeEach((to, from, next) => {
-  if (to.meta.title) {
-    document.title = to.meta.title
-  }
-  next()
-})
-
-
-// Vue.use(vConsole);
-
-// 需要挂载
-/* eslint-disable no-new */
 new Vue({
-  el: '#app',
+  // 挂载，目的是什么？让我们可以在插件中访问到Router实例
   router,
-  components: { App },
-  template: '<App/>'
-})
+
+  store,
+  render: h => h(App)
+}).$mount('#app')
