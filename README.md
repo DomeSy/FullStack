@@ -27,3 +27,8 @@
           document.body.removeChild(vm.$el)
           vm.$destroy()
       实现树形结构
+
+  ### 02-FamilyBucket
+    vue全家桶 实现  核心原理：实现一个插件，用install方法，然后用Vue.use,最后挂载
+      vueRouter 手写实现
+      vuex 手写实现
