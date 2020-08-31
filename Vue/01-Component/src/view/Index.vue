@@ -7,13 +7,13 @@
     <!-- <Solt></Solt> -->
 
     <!-- Element表单 -->
-    <ElementTest ></ElementTest>
+    <!-- <ElementTest ></ElementTest> -->
 
     <!-- 树形组件 -->
     <!-- <Recursion></Recursion> -->
 
     <!-- 混合对象 -->
-    <!-- <Mixins></Mixins> -->
+    <Mixins></Mixins>
   </div>
 </template>
 
