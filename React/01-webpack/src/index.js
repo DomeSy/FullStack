@@ -3,7 +3,7 @@ console.log("hello webpack");
 
 import "./index.css";
 import "./home.jpg"
-import "./index.less"
+import "./index.scss"
 
 // webpack的默认配置
 // 1>定义好入口文件  => /src/index.js(默认)

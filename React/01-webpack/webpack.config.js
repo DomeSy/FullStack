@@ -67,6 +67,23 @@ module.exports = {
           },
           "less-loader"
         ]
+      },
+      {
+        test: /\.(scss|sass)$/,
+        // 顺序，以此从后面解析
+        use: [MiniCssExtractPlugin.loader, "css-loader",
+          {
+            loader: "postcss-loader",
+            options: {
+              plugins:[
+                require("autoprefixer")({ 
+                  overrideBrowserslist: ["last 2 versions", ">1%"]
+                })
+              ]
+            }
+          },
+          "sass-loader"
+        ]
       }
     ]
   },

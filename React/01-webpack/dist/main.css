@@ -13,6 +13,5 @@ body div {
   display: -ms-flexbox;
   display: flex;
   -webkit-transform: translateX(100);
-          transform: translateX(100);
-}
+          transform: translateX(100); }
 
