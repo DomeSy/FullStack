@@ -18,7 +18,6 @@ class HomePage extends Component {
     return (
       <div>
         {/* <h3 className={themeColor}>HomePage</h3> */}
-
         <h3 className={themeColor}>HomePage</h3>
 
         <UserPage />

@@ -27,3 +27,9 @@ export default class ConetxtPage extends Component {
     )
   }
 }
+
+
+// 如何使用context
+// 1> 创建一个context对象： React.createContxt
+// 2> Provider提供着， 接收一个value value就是我们要传递的参数
+// 3> 子组件如何接收： 三种方式（Consumer、 ContextType（类组件中）、useContext(只能用在函数组件或者自定义Hook)）
