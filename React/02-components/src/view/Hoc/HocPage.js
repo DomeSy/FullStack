@@ -17,6 +17,7 @@ function Child(props) {
   </div>
 }
 
+
 const Foo = foo(Child);
 
 // 多次包裹就是链式调用
