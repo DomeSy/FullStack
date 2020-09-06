@@ -1,6 +1,7 @@
 import React from 'react';
 // import ConetxtPage from './view/communication/ContextPage';
-import HocPage from './view/Hoc/HocPage';
+// import HocPage from './view/Hoc/HocPage';
+import Test from './view/antd/Test';
 
 
 function App() {
@@ -11,7 +12,10 @@ function App() {
       {/* <ConetxtPage /> */}
 
       {/* 高阶组件Hoc */}
-      <HocPage />
+      {/* <HocPage /> */}
+
+      {/* antd */}
+      <Test />
     </div>
   );
 }
