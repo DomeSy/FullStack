@@ -1,7 +1,8 @@
 import React from 'react';
 // import ConetxtPage from './view/communication/ContextPage';
 // import HocPage from './view/Hoc/HocPage';
-import Test from './view/antd/Test';
+// import Test from './view/antd/Test';
+import Fuites from './view/Hook/Fruit';
 
 
 function App() {
@@ -15,7 +16,10 @@ function App() {
       {/* <HocPage /> */}
 
       {/* antd */}
-      <Test />
+      {/* <Test /> */}
+
+      {/* Hook */}
+      <Fuites />
     </div>
   );
 }
