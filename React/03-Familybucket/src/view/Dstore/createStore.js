@@ -12,6 +12,7 @@ export default function createStore(reducer){
   function dispatch(action){
     currentState = reducer(currentState, action)
     // 使用遍历
+    // 这里执行的是回调函数
     currentListeners.forEach(listener => listener())
   }
 
