@@ -4,11 +4,19 @@ import store from "../../store/index"
 export default class ReduxPage extends Component {
 
   componentDidMount(){
-    // 3>使用订阅功能store.subscribe，产生一个回调函数
-    store.subscribe(() => {
+    // 3>使用订阅功能store.subscribe，产生一个回调函数,
+    this.unsubscribe = store.subscribe(() => {
       // this.forceUpdate()： 会导致组件跳过shouldComponentUpdate(),直接调用render()
       this.forceUpdate()
     })
+  }
+
+  componentWillUnmount(){
+    // 4>取消订阅,有订阅必然会有取消订阅则只需要新定义unsubscribe是否存在，然后直接使用就行
+    // 取消订阅在componentWillUnmount
+    if(this.unsubscribe){
+      this.unsubscribe();      
+    }
   }
 
   add = () => {
