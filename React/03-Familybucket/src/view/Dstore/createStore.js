@@ -1,6 +1,12 @@
-// createStore本质是一个对象,接收一个reducer
+// createStore本质是一个对象,接收一个reducer, 第二个增加中间件机制
 // 基本用了三个函数 getState, dispatch, subscribe
-export default function createStore(reducer){
+export default function createStore(reducer, enhancer){
+
+  if(enhancer){
+    //增强createStore的dispatch
+    return enhancer(createStore)(reducer)
+  } 
+
   let currentState; 
   let currentListeners = []
 

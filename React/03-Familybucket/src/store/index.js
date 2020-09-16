@@ -1,5 +1,5 @@
-import { applyMiddleware, createStore } from 'redux'
-// import { createStore } from '../view/Dstore/index'
+// import { applyMiddleware, createStore } from 'redux'
+import { createStore, applyMiddleware } from '../view/Dstore/index'
 
 // 导入中间件
 import thunk from 'redux-thunk';
