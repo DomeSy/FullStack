@@ -19,6 +19,11 @@ export default function createStore(reducer){
   // 订阅事件发生改变是在dispath后发生
   function subscribe(listener){
     currentListeners.push(listener)
+    // 返回取消订阅的函数
+    return () => {
+      const index = currentListeners.indexOf(listener)
+      currentListeners.splice(index, 1)
+    }
   }
 
   return {
