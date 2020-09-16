@@ -24,6 +24,17 @@ export default class ReduxPage extends Component {
     store.dispatch({type: 'ADD', payload: 100})
   }
 
+  asyncAdd = () => {
+    // 这里写异步的时候要把setTimeout放在里面，当然放到外面也是可以，但如果要放到外面则需要将整个store传入，这样明显不可取，所以当异步调用的时候，应该把一步的函数放入store.dispatch,并且可以获得此时的方法
+    // 当store.dispatch接收的参数是一个回调函数的时候，第一个是当前dispatch，第二个是当前的getState,getState是一个函数
+    store.dispatch((dispatch, getState) => {
+      setTimeout(() => {
+        console.log("getState", getState());
+        dispatch({type: "ADD"})
+      }, 1000)
+    })
+  }
+
   render() {
     return (
       <div>
@@ -31,6 +42,7 @@ export default class ReduxPage extends Component {
         {/* 此处未做任何操作，getState() 拿到的是当前reducer的state，即初始值 */}
         <div>{store.getState()}</div>
         <button onClick={this.add}>add</button>
+        <button onClick={this.asyncAdd}>asyncAdd</button>
       </div>
     )
   }
