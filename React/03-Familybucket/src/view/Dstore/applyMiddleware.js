@@ -1,4 +1,5 @@
-import { compose } from "redux";
+// import { compose } from "redux";
+import compose from './compose'
 
 // 手写applyMiddleware
 export default function applyMiddleware(...middlewares) {
