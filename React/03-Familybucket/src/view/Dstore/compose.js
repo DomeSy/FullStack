@@ -1,4 +1,5 @@
 // 手写compose
+
 export default function compose(...funce) {
   if (funce.length === 0){
     return arg => arg;
