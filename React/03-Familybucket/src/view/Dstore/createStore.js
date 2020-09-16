@@ -16,7 +16,6 @@ export default function createStore(reducer, enhancer){
 
   // 接收一个action
   function dispatch(action){
-    console.log(action)
     currentState = reducer(currentState, action)
     console.log(currentState)
 
