@@ -1,15 +1,15 @@
 import React from 'react';
-// import ReduxPage from './view/Rudex/ReduxPage';
-import ReducerPage from './view/Rudex/ReducerPage';
+import ReduxPage from './view/Rudex/ReduxPage';
+// import ReducerPage from './view/Rudex/ReducerPage';
 
 function App() {
   return (
     <div>
       {/* Redux */}
-      {/* <ReduxPage /> */}
+      <ReduxPage />
 
       {/* Reducer */}
-      <ReducerPage />
+      {/* <ReducerPage /> */}
     </div>
   );
 }
