@@ -2,8 +2,8 @@ import React from 'react';
 // import ReactReduxPage from './view/ReactRedux/ReactReduxPage';
 // import ReduxPage from './view/Rudex/ReduxPage';
 // import ReducerPage from './view/Rudex/ReducerPage';
-// import HookPages from './view/Hook/HookPages';
-import ReactReduxHookPage from './view/Hook/ReactReduxHookPage';
+import HookPages from './view/Hook/HookPages';
+// import ReactReduxHookPage from './view/Hook/ReactReduxHookPage';
 
 function App() {
   return (
@@ -15,13 +15,13 @@ function App() {
       {/* <ReducerPage /> */}
 
       {/* Hook */}
-      {/* <HookPages /> */}
+      <HookPages />
 
       {/* React-Redux */}
       {/* <ReactReduxPage /> */}
 
       {/* React-Redux: HOOK */}
-      <ReactReduxHookPage />
+      {/* <ReactReduxHookPage /> */}
     </div>
   );
 }
