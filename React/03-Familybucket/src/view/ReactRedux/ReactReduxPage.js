@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 // import store from "../../store/index"
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
+// import bindActionCreators from '../Dstore/bindActionCreators'
 
 // connect有两个参数
 // 第一个参数mapStateToProps,接收一个state(就是总的state集合)，返回一个state（拿去需要的state）
@@ -29,6 +30,7 @@ import { bindActionCreators } from 'redux'
 
     // bindActionCreators，作用将dispatch付给creators里的每一项
     creators = bindActionCreators(creators, dispatch);
+    console.log(creators,'--09')
 
     // return { dispatch, add, minus }
     return { dispatch, ...creators }

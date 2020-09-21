@@ -1,8 +1,8 @@
 import React from 'react';
-// import ReactReduxPage from './view/ReactRedux/ReactReduxPage';
+import ReactReduxPage from './view/ReactRedux/ReactReduxPage';
 // import ReduxPage from './view/Rudex/ReduxPage';
 // import ReducerPage from './view/Rudex/ReducerPage';
-import HookPages from './view/Hook/HookPages';
+// import HookPages from './view/Hook/HookPages';
 // import ReactReduxHookPage from './view/Hook/ReactReduxHookPage';
 
 function App() {
@@ -15,10 +15,10 @@ function App() {
       {/* <ReducerPage /> */}
 
       {/* Hook */}
-      <HookPages />
+      {/* <HookPages /> */}
 
       {/* React-Redux */}
-      {/* <ReactReduxPage /> */}
+      <ReactReduxPage />
 
       {/* React-Redux: HOOK */}
       {/* <ReactReduxHookPage /> */}
