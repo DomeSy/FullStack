@@ -5,6 +5,7 @@ import React from 'react';
 // import HookPages from './view/Hook/HookPages';
 // import ReactReduxHookPage from './view/Hook/ReactReduxHookPage';
 import RoutePage from './view/Route/RoutePage';
+// import RouteComponentPage from './view/Route/RouteComponentPage';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
 
       {/* ReactRoute */}
       <RoutePage />
+      {/* <RouteComponentPage /> */}
     </div>
   );
 }
