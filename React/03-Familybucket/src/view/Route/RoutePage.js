@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
+// import { BrowserRouter as Router, Route, Link } from '../Droute/index'
 import _404Pages from './_404Pages';
 import HomePage from './HomePage';
 import UserPages from './UserPages';
@@ -21,7 +22,7 @@ export default class RoutePage extends Component {
 
 
           <Switch>
-            {/* <Route exact path="/" children={children} component={HomePage} /> */}
+            <Route exact path="/" children={children} component={HomePage} />
             <Route exact path="/" component={HomePage} />
             <Route path="/user" component={UserPages} />
             <Route path="/login" component={LoginPages} />
@@ -40,7 +41,7 @@ export default class RoutePage extends Component {
 function Product(props){
   console.log('Produce-prop', props)
   const { params, url } = props.match
-  const { id } = props.match.params;
+  const { id } = params;
   return (
     <div>
       <h1>Produce</h1>
@@ -53,7 +54,7 @@ function Product(props){
 }
 
 function Detail(){
-  return (
+  return ( 
     <div>
       <h1>
         商品详情页
@@ -79,7 +80,7 @@ function children(props) {
   return <div>children</div>
 }
 
-function render(props) {
-  console.log("render props", props)
-  return <div>render</div>
-}
+// function render(props) {
+//   console.log("render props", props)
+//   return <div>render</div>
+// }
