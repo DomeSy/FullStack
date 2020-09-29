@@ -1,4 +1,5 @@
 import { applyMiddleware, createStore, combineReducers } from 'redux'
+import { loginReducer } from './loginReducer.js'
 // import  createStore, applyMiddleware, thunk, logger } from '../view/Dstore/index'
 
 // 导入中间件
@@ -22,6 +23,7 @@ export const counterReducer = (state = 0, { type, payload = 1 }) => {
 // createStore接收的第二个组件是中间件，如果有多个中间件需要使用 applyMiddleware 来包裹
 // applyMiddleware里有顺序关系，logger必须放在最后才行
 // const store = createStore(counterReducer, applyMiddleware(thunk, promiseMiddleware, logger))
-const store = createStore(combineReducers({count: counterReducer}), applyMiddleware(thunk, promiseMiddleware, logger))
+const store = createStore(combineReducers({count: counterReducer, user: loginReducer}), applyMiddleware(thunk, promiseMiddleware, logger))
+// const store = createStore(combineReducers({user: loginReducer}), applyMiddleware(thunk, promiseMiddleware, logger))
 
 export default store
