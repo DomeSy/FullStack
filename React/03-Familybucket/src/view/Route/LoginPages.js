@@ -21,7 +21,7 @@ class LoginPages extends Component {
   }
 
   render() {
-    const { isLogin, location, dispatch, login } = this.props;
+    const { isLogin, location, login } = this.props;
     // console.log(location,'location')
     console.log(this.props,'登录')
     if(isLogin){
