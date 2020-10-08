@@ -4,10 +4,11 @@ import React from 'react';
 // import ReduxPage from './view/Rudex/ReduxPage';
 // import ReducerPage from './view/Rudex/ReducerPage';
 // import HookPages from './view/Hook/HookPages';
+import Hook from './view/Hook/Hook';
 // import ReactReduxHookPage from './view/Hook/ReactReduxHookPage';
 // import RoutePage from './view/Route/RoutePage';
 // import RouteComponentPage from './view/Route/RouteComponentPage';
-import Routes from './view/Routes/index';
+// import Routes from './view/Routes/index';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       {/* <ReducerPage /> */}
 
       {/* Hook */}
+      <Hook />
       {/* <HookPages /> */}
 
       {/* React-Redux */}
@@ -35,7 +37,7 @@ function App() {
       {/* <Generator /> */}
 
       {/* 路由守卫 */}
-      <Routes />
+      {/* <Routes /> */}
 
     </div>
   );
