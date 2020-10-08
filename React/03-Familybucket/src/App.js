@@ -9,7 +9,8 @@ import React from 'react';
 // import RoutePage from './view/Route/RoutePage';
 // import RouteComponentPage from './view/Route/RouteComponentPage';
 // import Routes from './view/Routes/index';
-import UseMemo from './view/Hook/UseMemo';
+// import UseMemo from './view/Hook/UseMemo';
+import UseCallBack from './view/Hook/UseCallback';
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
 
       {/* Hook */}
       {/* <Hook /> */}
-      <UseMemo />
+      {/* <UseMemo /> */}
+      <UseCallBack />
       {/* <HookPages /> */}
 
       {/* React-Redux */}
