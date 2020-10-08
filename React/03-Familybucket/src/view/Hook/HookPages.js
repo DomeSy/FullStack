@@ -19,6 +19,7 @@ export default function HookPages() {
   useLayoutEffect(() => {
     console.log('useLayoutEffect', '002')
   }, [state])
+  
   return (
     <div>
       <h1>userReducer</h1>
