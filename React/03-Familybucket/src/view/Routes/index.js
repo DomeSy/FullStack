@@ -11,12 +11,12 @@ export default function Routes() {
   return (
     <div>
       <Router>
-        <Link to='/'>首页</Link>
+        {/* <Link to='/'>首页</Link>
         <br />
         <Link to='/user'>用户中心</Link>
         <br />
         <Link to='/login'>登录</Link>
-        <br />
+        <br /> */}
 
 
         <Switch>

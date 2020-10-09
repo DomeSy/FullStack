@@ -30,7 +30,6 @@ import { bindActionCreators } from 'redux'
 
     // bindActionCreators，作用将dispatch付给creators里的每一项
     creators = bindActionCreators(creators, dispatch);
-    console.log(creators,'--09')
 
     // return { dispatch, add, minus }
     return { dispatch, ...creators }

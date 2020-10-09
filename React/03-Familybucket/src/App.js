@@ -10,7 +10,8 @@ import React from 'react';
 // import RouteComponentPage from './view/Route/RouteComponentPage';
 // import Routes from './view/Routes/index';
 // import UseMemo from './view/Hook/UseMemo';
-import UseCallBack from './view/Hook/UseCallback';
+// import UseCallBack from './view/Hook/UseCallback';
+import RouteUnitePage from './view/RouteUnite/RouteUnitePage';
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
       {/* Hook */}
       {/* <Hook /> */}
       {/* <UseMemo /> */}
-      <UseCallBack />
+      {/* <UseCallBack /> */}
       {/* <HookPages /> */}
 
       {/* React-Redux */}
@@ -42,6 +43,8 @@ function App() {
 
       {/* 路由守卫 */}
       {/* <Routes /> */}
+
+      <RouteUnitePage />
 
     </div>
   );
