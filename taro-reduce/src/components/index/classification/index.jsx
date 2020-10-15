@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import { View } from '@tarojs/components';
-import { ListAll, TitleBig } from '../../Dcomponents'
+import { ListAll, TitleBig } from '@components/Dcomponents'
 
 import './index.scss'
 

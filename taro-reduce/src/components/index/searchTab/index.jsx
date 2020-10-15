@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import { View } from '@tarojs/components';
-import { Site } from '../../Dcomponents'
+import { Site } from '@components/Dcomponents'
 import { AtIcon } from 'taro-ui'
 
 import  './index.scss'

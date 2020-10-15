@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { View } from '@tarojs/components';
-import { Title, Card } from '../../Dcomponents'
+import { View } from '@tarojs/components'
+import { Title, Card } from '@components/Dcomponents'
 
 import './index.scss'
 
