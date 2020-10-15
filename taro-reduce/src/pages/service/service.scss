@@ -1,11 +1,10 @@
 @import "@styles/theme.scss";
 
 .Service{
-  .img{
+  &-img{
     height: 206px;
-    background: rebeccapurple;
   }
-  .border{
+  &-border{
     height: 8px;
     background: $font-color-background;
   }

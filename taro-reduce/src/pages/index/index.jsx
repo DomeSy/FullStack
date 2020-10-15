@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { View} from '@tarojs/components'
-import { SearchTab, Ration, Classification, Licence, Theme, ThemeService, Tip } from '@components';
+import { Tip } from '@components'
+import { SearchTab, Ration, Classification, Licence, Theme, ThemeService } from './components';
 
 import '.'
 
