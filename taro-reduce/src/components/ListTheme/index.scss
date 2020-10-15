@@ -16,13 +16,13 @@
       width: 582px;
       font-family: $font-family;
       &-title{
-        line-height: $line-heght;
+        line-height: $line-height;
         font-size: $font-size;
         color: $font-color;
         margin-bottom: 19px;
       }
       &-text{
-        line-height: $line-heght-effect;
+        line-height: $line-height-effect;
         font-size: $font-size-effect;
         color: $font-color-effect;
         @include text-ellipsis;

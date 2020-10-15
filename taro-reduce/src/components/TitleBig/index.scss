@@ -4,23 +4,23 @@
   padding: 23px 24px 9px 24px;
   display: flex;
   justify-content: left;
-  .list{
+  &-list{
     font-family: $font-family;
     margin-right: 32px;
     &:last-of-type{
       margin-right: 0;
     }
-    .text-active{
+    &-text-active{
       line-height: 50px;
       font-size: 36px;
       color: $font-color;
     }
-    .text{
+    &-text{
       line-height: 50px;
       font-size: 28px;
       color: $font-color-effect;
     }
-    .underline{
+    &-underline{
       background: $blue;
       height: 4px;
       margin: 10px 16px 0 16px;
