@@ -10,8 +10,8 @@ class Card extends Component {
   render() {
 
     return (
-      <View>
-        卡包
+      <View className="Card">
+        <View className="Card-tip">*左滑可取消订阅；长按拖地可改变证照排序</View>
       </View>
     )
   }
